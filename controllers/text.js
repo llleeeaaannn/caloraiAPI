@@ -17,3 +17,5 @@ const generateTextCalories = async (food) => {
   console.log(description.data.choices[0].message);
 
 }
+
+export default generateTextCalories;
