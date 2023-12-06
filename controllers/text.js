@@ -4,11 +4,11 @@ const generateTextCalories = async (food) => {
 
   const caloriesCompletion = await openai.chat.completions.create({
     model: 'gpt-3.5-turbo',
-    max_tokens: 50,
+    max_tokens: 20,
     messages: [
       {
         role: 'user',
-        content: `Calculate how many calories are in ${food}. Just give the number.`
+        content: `Calculate how many calories are in ${food}. Just give the number, nothing else."`
       }
     ],
   })

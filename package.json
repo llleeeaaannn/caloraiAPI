@@ -1,7 +1,7 @@
 {
   "name": "caloraiapi",
   "version": "1.0.0",
-  "description": "",
+  "description": "App to calculate calories",
   "main": "app.js",
   "type": "module",
   "scripts": {
