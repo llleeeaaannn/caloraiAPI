@@ -1,8 +1,8 @@
-import openai from '../config/openai';
+import openai from '../config/openai.js';
 
 const generateTextCalories = async (food) => {
 
-  const caloriesCompletion = await openai.createChatCompletion({
+  const caloriesCompletion = await openai.chat.completions.create({
     model: 'gpt-3.5-turbo',
     max_tokens: 50,
     messages: [
