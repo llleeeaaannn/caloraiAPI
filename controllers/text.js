@@ -1,5 +1,12 @@
 import openai from '../config/openai.js';
 
+const caloriesPrompt = (food) => {
+  return `Calculate how many calories are in ${food}. Just give the number, nothing else. Do not include the word calories, simply provide the integer."`
+}
+
+const macrosPrompt = (food) => {
+  return `Estimate the nutritional macros in ${food}. Just give the numbers, in the format 'Protein, Fat, Carbs',  nothing else. Do not include the name of the macros, simply provide the integers in grams."`
+}
 
 const generateTextCalories = async (food) => {
 
@@ -10,7 +17,7 @@ const generateTextCalories = async (food) => {
     messages: [
       {
         role: 'user',
-        content: `Calculate how many calories are in ${food}. Just give the number, nothing else. Do not include the word calories, simply provide the integer."`
+        content: macrosPrompt(food)
       }
     ],
   })
