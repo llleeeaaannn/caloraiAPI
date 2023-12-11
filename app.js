@@ -1,6 +1,5 @@
 import cors from 'cors';
 import express from 'express';
-import generateTextCalories from './controllers/text.js';
 
 // Define express app and use cors & json
 const app = express();
@@ -13,4 +12,4 @@ const errorHandling = (err, req, res, next) {
   res.status(500).send('Internal Server Error');
 }
 
-generateTextCalories('Plate of steak with roast potatoes.');
+app.use(errorHandling);
