@@ -13,6 +13,7 @@ const errorHandling = (err, req, res, next) {
   res.status(500).send('Internal Server Error');
 }
 
+// Define port or pull from .env file
 const port = process.env.PORT || 4000;
 
 app.use('/text', text);
