@@ -1,7 +1,7 @@
 import express from 'express';
 import generateTextCalories from '../controllers/generateTextCalories.js';
 
-const router = express.config();
+const router = express.Router();
 
 const getCalories = async function (req, res, next) {
   try {
