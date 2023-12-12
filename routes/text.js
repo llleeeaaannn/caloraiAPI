@@ -19,13 +19,13 @@ router
   .post([getCalories], function(req, res) {
     console.log('Calories Generated from text input');
 
-    
+    // Store calories
     const calories = req.pdf;
 
     // Set response header and content type
     res.header('Content-type', 'application/pdf');
     res.contentType("application/pdf");
 
-    // Send PDF data as response
-    res.send(pdf);
+    // Send calorie data as response
+    res.send(calories);
 })
