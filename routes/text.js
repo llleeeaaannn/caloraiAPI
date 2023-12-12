@@ -27,3 +27,5 @@ router
     // Send calorie data as response
     res.send(calories);
 })
+
+export default router;
