@@ -8,6 +8,8 @@ const macrosPrompt = (food) => {
   return `Estimate the nutritional macros in ${food}. Just give the numbers, in the format 'Protein, Fat, Carbs',  nothing else. Do not include the name of the macros, simply provide the integers in grams."`
 }
 
+const food = "100 grams of cooked chicken"
+
 const generateTextCalories = async (food) => {
 
   const caloriesCompletion = await openai.chat.completions.create({
