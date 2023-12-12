@@ -18,6 +18,6 @@ const port = process.env.PORT || 4000;
 
 app.use('/text', text);
 
-app.use(errorHandling);
+app.use(errorHandler);
 
 app.listen(port, () => console.log(`Server is running on Port ${port}`));
