@@ -1,6 +1,6 @@
 import cors from 'cors';
 import express from 'express';
-import text from './routes/text.js'; 
+import text from './routes/text.js';
 
 // Define express app and use cors & json
 const app = express();
@@ -13,4 +13,10 @@ const errorHandling = (err, req, res, next) {
   res.status(500).send('Internal Server Error');
 }
 
+const port = process.env.PORT || 4000;
+
+app.use('/text', text);
+
 app.use(errorHandling);
+
+app.listen(port, () => console.log(`Server is running on Port ${port}`));
