@@ -9,7 +9,7 @@ const macrosPrompt = (food) => {
 }
 
 const caloriesMacrosPrompt = (food) => {
-  return `Estimate the nutritional macros and calories in ${food}. Just give the numbers, in the format 'Protein, Fat, Carbs, Calories',  nothing else. Do not include the name of the macros, simply provide the integers in grams."`
+  return `Estimate the nutritional macros and calories in ${food}. Just give the numbers, in the format 'Protein, Fat, Carbs, Calories',  nothing else. Do not include the name of the macros or the word calories, simply provide the integers in grams for macros and integer of calories (in kcals)."`
 }
 
 const generateTextCalories = async (food) => {
