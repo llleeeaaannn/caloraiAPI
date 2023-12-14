@@ -26,9 +26,9 @@ const generateTextCalories = async (food) => {
     ],
   })
 
-  console.log(caloriesCompletion);
-  console.log(caloriesCompletion.choices[0]);
-  console.log(caloriesCompletion.choices[0].message.content);
+  // console.log(caloriesCompletion);
+  // console.log(caloriesCompletion.choices[0]);
+  // console.log(caloriesCompletion.choices[0].message.content);
 
   return caloriesCompletion.choices[0].message.content;
 }

@@ -21,6 +21,7 @@ router
 
     // Store calories
     const calories = req.calories;
+    console.log(calories);
 
     // Set response header and content type
     res.header('Content-type', 'application/json');
