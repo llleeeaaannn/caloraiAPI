@@ -6,7 +6,7 @@ const router = express.Router();
 const getCalories = async function (req, res, next) {
   try {
     const food = req.body.food;
-    req.calories = generateTextCalories(food);
+    req.calories = await generateTextCalories(food);
     next()
   } catch (error) {
     console.log(error.message);
