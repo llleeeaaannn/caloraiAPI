@@ -21,7 +21,7 @@ const generateTextCalories = async (food) => {
     messages: [
       {
         role: 'user',
-        content: caloriesPrompt(food)
+        content: caloriesMacrosPrompt(food)
       }
     ],
   })

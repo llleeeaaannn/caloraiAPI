@@ -3,6 +3,7 @@ import generateTextCalories from '../controllers/generateTextCalories.js';
 
 const router = express.Router();
 
+// Function to parse for input and call generateTextCalories
 const getCalories = async function (req, res, next) {
   try {
     const food = req.body.food;
@@ -17,7 +18,6 @@ const getCalories = async function (req, res, next) {
 router
   .route('/')
   .post([getCalories], function(req, res) {
-    console.log('Calories Generated from text input');
 
     // Store calories
     const calories = req.calories;
