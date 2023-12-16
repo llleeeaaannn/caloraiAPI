@@ -3,6 +3,7 @@ import openai from '../config/openai.js';
 const model = 'gpt-3.5-turbo';
 const max_tokens = 50;
 const temperature = 0;
+const jsonType = "json_object";
 
 const caloriesPrompt = (food) => {
   return `Calculate how many calories are in ${food}. Just give the number, nothing else. Do not include the word calories, simply provide the integer."`
