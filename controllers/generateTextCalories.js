@@ -5,6 +5,8 @@ const max_tokens = 50;
 const temperature = 0;
 const jsonType = "json_object";
 
+// JSON mode documentation: https://platform.openai.com/docs/guides/text-generation/json-mode
+
 const caloriesPrompt = (food) => {
   return `Calculate how many calories are in ${food}. Just give the number, nothing else. Do not include the word calories, simply provide the integer."`
 }
