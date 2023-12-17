@@ -1,6 +1,7 @@
 import cors from 'cors';
 import express from 'express';
 import text from './routes/text.js';
+import image from './routes/image.js';
 
 // Define express app and use cors & json
 const app = express();
@@ -17,6 +18,8 @@ function errorHandler(err, req, res, next) {
 const port = process.env.PORT || 4000;
 
 app.use('/text', text);
+
+app.use('image', image);
 
 app.use(errorHandler);
 
